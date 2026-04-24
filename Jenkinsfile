@@ -26,7 +26,7 @@ pipeline {
                 sh '''
                 docker stop petclinic || true
                 docker rm petclinic || true
-                docker run -d -p 8081:8080 --name petclinic petclinic-app
+                docker run -d -p 8085:8080 --name petclinic petclinic-app
                 '''
             }
         }
